@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* CSS Document - Friends Seminary */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body, div, h1, h2, h3, span, p {
+			}
+/* fullscreen */
+			
+body {
+	margin-top: 0px;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	background-color: #ffffff;
+}
+
+/* fix for scroll bars on webkit & >=Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+			}
+			
+		
+/* general text */			
+h3 {
+	color: #d7282f;
+	font-weight: 700;
+	font-size: 17pt;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #ffffff;
+}
+
+
+			
+p {
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12pt;
+	font-family: 'Ubuntu', sans-serif;
+	line-height: 18pt;
+}
+
+
+.menutitle {
+	font-size: 13pt;
+	font-weight: 700;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.menuitem {
+	font-size: 11pt;
+	font-weight: 400;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* photos + video tour stop styles */
+
+.caption {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.image-container::after {
+    padding-top: 67.6%;
+    display: block;
+    content: '';
+}
+
+.image-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	max-height: 470px;
+}
+
+/* social buttons */
+
+				
+#socialbuttons {
+	display: none;
+	padding-left: 48px;
+	padding-right: 48px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+	background-color: #ffffff;	
+}
+
+
+#socialbuttons span {
+	color: #d7282f;
+	font-weight: 700;
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#socialbuttons a {
+margin-left: 5px;
+margin-right: 5px;
+}
+
+/*  fancybox background and caption in the slideshows  */
+
+.fancybox-skin {
+	background: #d7282f;
+}
+
+.fancybox-title-undefined-wrap {
+	color: #ffffff;
+	padding: 10px;
+	text-align: center;
+	}
+
+.fancybox-close:hover {
+
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+.fancybox-nav span:hover {
+
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+.fancybox-title-outside-wrap {
+	line-height: 18px;
+	font-size: 14px;
+}
+
+
+.fancybox-title-float-wrap {
+	color: #8b2331;
+	padding: 0px;
+	text-align: left;
+}
+
+
+.fancybox-title-float-wrap .child {
+	display: inline-block;
+	background: #8b2331; 
+	color: #FFF;
+	line-height: 18px;
+	font-size: 12px;
+	white-space: wrap;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: left;
+}
+
+
+
+
+.svg:hover { 
+	transform: scale(1.2); 
+	transition: all .2s ease-in-out;
+}
+
+
+.content {
+	color:#777; 
+	width:100%;
+}
+
+/* Galleria controls */
+
+
+
+#galleria {
+	height:520px
+}
+			
+#text {
+	margin-left: 0px;
+	margin-right: 0px;
+}

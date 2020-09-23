@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+		<title>Friends Seminary | Virtual Campus Experience</title>
+		<!-- change viewport for phones -->		
+		<meta id="testViewport" name=viewport content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<script>
+if (screen.width < 768) {
+    var mvp = document.getElementById('testViewport');
+    mvp.setAttribute('content','width=device-width, initial-scale=.8, minimum-scale=.8, maximum-scale=.8');
+}
+</script>
+	
+	<!-- end change viewport for phones -->	
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="mobile-web-app-capable" content="yes" />
+
+
+        <link href="styles.css" rel="stylesheet">
+
+
+		<style type="text/css" title="Default">
+
+			
+			
+
+			/* fullscreen */
+			html {
+				height:100%;
+			}
+			body {
+				height:100%;
+				margin: 0px;
+				overflow:hidden; /* disable scrollbars */
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove highlight on tab for iOS/Android */
+			}
+			/* fix for scroll bars on webkit & >=Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+			}
+			
+			
+			
+		</style>
+
+        
+        
+ <!-- /////////////  BEGIN LIGHTBOX FUNCTIONS A   //////////////////    -->
+    
+    <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.0.6" media="screen" />
+    <script src="fancybox/lib/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.0.6"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+   <script type="text/javascript">
+    function LaunchFancybox(url, fbWidth, fbHeight, fbType)
+    {
+ $.fancybox({
+                'width': fbWidth,
+                'height': fbHeight,
+                'autoSize': false,
+				'type': fbType, 
+				'padding': 0,
+				'overlayColor': '#ccc',
+				href: url,
+				iframe : {
+        preload: false
+    },
+	
+	helpers : {
+        overlay : {
+            css : {
+                'background' : '#000000',
+
+            }
+        }
+    }
+				
+            });
+    }
+	
+</script>
+
+<script type="text/javascript">
+    function LaunchFancybox2(url, fbType)
+    {
+ $.fancybox({
+                'autoSize': true,
+				'type': fbType, 
+				'padding': 0,
+	            'aspectRatio' : true,
+				'overlayColor': '#ccc',
+				href: url,
+				iframe : {
+        preload: false
+    },
+	
+	helpers : {
+        overlay : {
+            css : {
+                'background' : '#000000',
+
+            }
+        }
+    }
+				
+            });
+    }
+	
+</script>
+
+<!-- /////////////  END LIGHTBOX FUNCTIONS   //////////////////    -->
+        	
+
+
+	</head>
+	<body>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+		<script type="text/javascript" src="pano2vr_player.js">
+		</script>
+		<script type="text/javascript" src="skin.js">
+		</script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQHzglHjCaCpKxZJnX-yd4AmjLqdfL8mo&v=3.exp">
+		</script>
+		<div id="container" style="width:100%;height:100%;overflow:hidden;">
+		<br>Loading...<br><br>
+		</div>
+		<script type="text/javascript">
+	
+			// create the panorama player with the container
+			pano=new pano2vrPlayer("container");
+			// add the skin object
+			skin=new pano2vrSkin(pano);
+			// load the configuration
+		
+			window.addEventListener("load", function() {
+				pano.readConfigUrlAsync("pano.xml");
+			});
+		</script>
+		<noscript>
+			<p><b>Please enable Javascript!</b></p>
+		</noscript>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
+		<!-- Hack needed to hide the url bar on iOS 9, iPhone 5s --> 
+		<div style="width:1px;height:1px;"></div>
+
+
+<!-- /////////////  BEGIN PHOTO SLIDESHOWS   //////////////////    -->
+
+
+
+<script type="text/javascript">
+function Annex(index){ 
+        $.fancybox([ 
+                {'href'  : 'photos/Annex/Annex01.jpg', 
+                'title' : 'The Annex is located directly across 15th Street from our historically landmarked Meetinghouse.  A dedicated Upper School space, the Annex houses math classrooms and science labs as well as the McCray Blackbox Theater. '}, 
+
+                {'href'  : 'photos/Annex/Annex02.jpg', 
+                'title' : 'Traveling through the hallways, you will hear enthusiastic “aha” moments as students work out connections and cause and effect experiments in the chemistry, biology and physics labs—affectionately called the “Cave”.'}, 
+
+                {'href'  : 'photos/Annex/Annex03.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/Annex/Annex04.jpg', 
+                'title' : 'In support of our performing arts program, the Blackbox Theater provides flexible space for smaller productions, including experimental theater and musical performances. For larger musical theater and drama productions and concerts, students may perform in a professional off-campus theater nearby. A few of our most recent productions have included: <i>Spring Awakening, Little Shop of Horrors, Metamorphoses, The Skin of our Teeth</i>, and Friends Seminary’s annual student-written, produced, and performed One Act Play Festival.'}, 
+
+                {'href'  : 'photos/Annex/Annex05.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/Annex/Annex06.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/Annex/Annex07.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/Annex/Annex08.jpg', 
+                'title' : ''},  
+
+                {'href'  : 'photos/Annex/Annex09.jpg', 
+                'title' : ''},  
+
+
+                ], 
+				
+
+                {
+					'index' : index,
+					padding: 0,
+					autosize: true,
+					openEffect: 'fade',
+                    nextEffect: 'fade', 
+                    prevEffect: 'fade',
+                    arrows: true,
+                    title: "", 
+                    
+
+                    helpers:  {
+        title:  {
+                  type : 'outside',
+              },
+        
+    }         
+
+                    }); 
+} 
+</script>
+
+
+
+
+<script type="text/javascript">
+function CentralBuilding(index){ 
+        $.fancybox([ 
+                {'href'  : 'photos/CentralBuilding/CentralBuilding01.jpg', 
+                'title' : '<strong>Shop:</strong> Lower School Art combines two-and three-dimensional skills-oriented programs.'}, 
+
+                {'href'  : 'photos/CentralBuilding/CentralBuilding02.jpg', 
+                'title' : 'The Shop especially is considered an experiential room of possibilities. Friends’ interdisciplinary approach teaches children to use three-dimensional expression to enhance creativity and understanding.'}, 
+
+                {'href'  : 'photos/CentralBuilding/CentralBuilding03.jpg', 
+                'title' : 'Peeking through the Shop window, you’re likely to see Lower School students donning goggles as they confidently wield hammers, saws, and drills to create three-dimensional art, or perhaps they’re immersed in printmaking, collage, construction, and textile work as they learn by doing.'}, 
+
+                {'href'  : 'photos/CentralBuilding/CentralBuilding04.jpg', 
+                'title' : 'For example, in second grade, the Science, Technology and Art Departments collaborate on a trebuchet—more commonly known as a catapult—project where students connect their knowledge of simple machines with their own designs to build and test their trebuchets, a project that supports and affirms their comprehension, skill, and, most importantly, their confidence.'}, 
+
+                {'href'  : 'photos/CentralBuilding/CentralBuilding05.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/CentralBuilding/CentralBuilding06.jpg', 
+                'title' : '<strong>Cafeteria:</strong> Each morning, the school doors open to the inviting smells of freshly baked muffins coming from the cafeteria. But the cafeteria is not just a place to eat; it’s a lively community hub where all members of the Friends community—students, parents, caregivers, faculty, and staff— gather for conversation and connection before the school day begins. Delicious, nutritionally-based menus are prepared daily and always offer nut-free, dairy-free, gluten-free, and vegetarian options. For all students at Friends, meals are included in tuition, which means that each student gets to enjoy the variety of meals our dedicated staff prepares. A multicultural menu of hot dishes rotates daily, and a full salad bar and sandwich station offers additional options for our Middle and Upper School students to choose their lunches. Lower Schoolers enjoy supervised family-style dining based on the daily menu.'}, 
+
+
+
+                ], 
+				
+
+                {
+					'index' : index,
+					padding: 0,
+					autosize: true,
+					openEffect: 'fade',
+                    nextEffect: 'fade', 
+                    prevEffect: 'fade',
+                    arrows: true,
+                    title: "", 
+                    
+
+                    helpers:  {
+        title:  {
+                  type : 'outside',
+              },
+        
+    }         
+
+                    }); 
+} 
+</script>
+
+
+
+
+<script type="text/javascript">
+function InnerCourtyard(index){ 
+        $.fancybox([ 
+                {'href'  : 'photos/InnerCourtyard/InnerCourtyard01.jpg', 
+                'title' : 'The Inner Courtyard joins four distinctly different buildings, both in age and architectural style, along their interior walls: the Townhouse, Hunter Hall, the Old Schoolhouse, and the Meetinghouse.'}, 
+
+                {'href'  : 'photos/InnerCourtyard/InnerCourtyard02.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/InnerCourtyard/InnerCourtyard03.jpg', 
+                'title' : 'The Inner Courtyard becomes another hub of the school as all members of our community use it as a shortcut from building to building; one Upper School student speculates that every Friends student passes through this space at least once a day! '}, 
+
+                {'href'  : 'photos/InnerCourtyard/InnerCourtyard04.jpg', 
+                'title' : 'On warmer days, you’ll find Upper School students eating lunch or meeting with their teachers on the benches scattered around the Inner Courtyard, our own private enclave that feels like an escape from the city.'}, 
+
+                {'href'  : 'photos/InnerCourtyard/InnerCourtyard05.jpg', 
+                'title' : 'Students (and sometimes faculty and staff!) of all ages enjoy basketball games and four square in this space; the sounds of their excitement are part of the soundtrack at Friends. '}, 
+
+
+                ], 
+				
+
+                {
+					'index' : index,
+					padding: 0,
+					autosize: true,
+					openEffect: 'fade',
+                    nextEffect: 'fade', 
+                    prevEffect: 'fade',
+                    arrows: true,
+                    title: "", 
+                    
+
+                    helpers:  {
+        title:  {
+                  type : 'outside',
+              },
+        
+    }         
+
+                    }); 
+} 
+</script>
+
+
+
+
+
+<script type="text/javascript">
+function LowerSchool(index){ 
+        $.fancybox([ 
+                {'href'  : 'photos/LowerSchool/LowerSchool01.jpg', 
+                'title' : 'In Lower School children embrace the joy of learning how to learn. Through their own investigations, explorations, and conversations, children begin to develop the skills needed to adapt to our ever-changing world.'}, 
+
+                {'href'  : 'photos/LowerSchool/LowerSchool02.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/LowerSchool/LowerSchool03.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/LowerSchool/LowerSchool04.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/LowerSchool/LowerSchool05.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/LowerSchool/LowerSchool06.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/LowerSchool/LowerSchool07.jpg', 
+                'title' : ''}, 
+
+
+                ], 
+				
+
+                {
+					'index' : index,
+					padding: 0,
+					autosize: true,
+					openEffect: 'fade',
+                    nextEffect: 'fade', 
+                    prevEffect: 'fade',
+                    arrows: true,
+                    title: "", 
+                    
+
+                    helpers:  {
+        title:  {
+                  type : 'outside',
+              },
+        
+    }         
+
+                    }); 
+} 
+</script>
+
+
+
+
+
+<script type="text/javascript">
+function MiddleSchool(index){ 
+        $.fancybox([ 
+                {'href'  : 'photos/MiddleSchool/MiddleSchool01.jpg', 
+                'title' : 'The Middle School years are a time of exploration and skill development for children. Our students are encouraged to develop their academic interests, self-discipline, and a good sense of self within the context of an expanding sense of community.'}, 
+
+                {'href'  : 'photos/MiddleSchool/MiddleSchool02.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/MiddleSchool/MiddleSchool03.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/MiddleSchool/MiddleSchool04.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/MiddleSchool/MiddleSchool05.jpg', 
+                'title' : ''}, 
+
+
+
+                ], 
+				
+
+                {
+					'index' : index,
+					padding: 0,
+					autosize: true,
+					openEffect: 'fade',
+                    nextEffect: 'fade', 
+                    prevEffect: 'fade',
+                    arrows: true,
+                    title: "", 
+                    
+
+                    helpers:  {
+        title:  {
+                  type : 'outside',
+              },
+        
+    }         
+
+                    }); 
+} 
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+function OuterCourtyard(index){ 
+        $.fancybox([ 
+                {'href'  : 'photos/OuterCourtyard/OuterCourtyard01.jpg', 
+                'title' : 'Pass by Friends on Rutherford Place during the day, and you will hear the laughter and see the creative play of our students in Grades 1 through 4.'}, 
+
+                {'href'  : 'photos/OuterCourtyard/OuterCourtyard02.jpg', 
+                'title' : 'This outdoor space becomes a courtyard for recess, special events, and our after school program, Friends after Three (F.A.T.) which uses the space for afternoon activities and play until 5 PM. '}, 
+
+                {'href'  : 'photos/OuterCourtyard/OuterCourtyard03.jpg', 
+                'title' : 'A newer use of the space happens in the spring just as the weather becomes nicer. Tables and colorful umbrellas appear in the Outer Courtyard as the Upper Schoolers enjoy the Pop-up Cafe. Students and faculty never know what kinds of special treats may happen at the Pop-up Cafe, and our younger students look forward to participating in this fun rite of passage when they get to the Upper School.'}, 
+
+
+                ], 
+				
+
+                {
+					'index' : index,
+					padding: 0,
+					autosize: true,
+					openEffect: 'fade',
+                    nextEffect: 'fade', 
+                    prevEffect: 'fade',
+                    arrows: true,
+                    title: "", 
+                    
+
+                    helpers:  {
+        title:  {
+                  type : 'outside',
+              },
+        
+    }         
+
+                    }); 
+} 
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+function UpperSchool(index){ 
+        $.fancybox([ 
+                {'href'  : 'photos/UpperSchool/UpperSchool01.jpg', 
+                'title' : 'Upper School requires critical thinking skills and reaches beyond the classroom to help students bring about “a world that ought to be”. Our Upper School program prepares students to engage with the wider world as curious, compassionate, reflective, resourceful and globally aware citizens.'}, 
+
+                {'href'  : 'photos/UpperSchool/UpperSchool02.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/UpperSchool/UpperSchool03.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/UpperSchool/UpperSchool04.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/UpperSchool/UpperSchool05.jpg', 
+                'title' : ''}, 
+
+                {'href'  : 'photos/UpperSchool/UpperSchool06.jpg', 
+                'title' : ''}, 
+
+
+                ], 
+				
+
+                {
+					'index' : index,
+					padding: 0,
+					autosize: true,
+					openEffect: 'fade',
+                    nextEffect: 'fade', 
+                    prevEffect: 'fade',
+                    arrows: true,
+                    title: "", 
+                    
+
+                    helpers:  {
+        title:  {
+                  type : 'outside',
+              },
+        
+    }         
+
+                    }); 
+} 
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- /////////////  END PHOTO SLIDESHOWS  //////////////////    -->
+
+
+	       
+<!-- /////////////  THE SOCIAL MEDIA LIGHTBOX   //////////////////    -->
+
+ <!-- AddToAny BEGIN -->
+    <div id="socialbuttons">
+<span>Share with your friends</br></br></span>
+<div class="a2a_kit a2a_kit_size_44 a2a_default_style"  >
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_pinterest"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_email"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+</div>
+   
+</body>
+
+
+</html>
+</html>
